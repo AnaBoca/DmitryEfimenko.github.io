@@ -8,6 +8,8 @@ window.app.controller('homeController', function($scope){
 	var img3 = $('.img-proj')[2];
 	var back3 = $('#b3');
 	var img4 = $('.img-proj')[3];
+
+	$scope.w1 = $scope.w2 = $scope.w3 = 526;
 	function getHeight(){
 		$scope.$apply(function(){
 			$scope.h1 = Math.max(img1.height,back1.height())+10;
