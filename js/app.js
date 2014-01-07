@@ -19,7 +19,7 @@ window.app.controller('homeController', function($scope){
 		});
 	};
 	window.onresize = getHeight;
-	$(document).ready(getHeight);
+	$(window).onload(getHeight);
 
 	$(document).on('click', '#proj1', function(e){
 		e.preventDefault();
