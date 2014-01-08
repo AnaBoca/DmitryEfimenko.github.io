@@ -14,8 +14,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
       
       <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-      <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
+      <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">-->
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
       <link rel="stylesheet" href="./css/site.css">
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,7 +63,7 @@
         <div class="row">
           <div class="col-lg-6" id="proj1-t">
             <h1 class="align-center">TwitterBootstrapMVC</h1>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" style="height: {{h1}}px; max-width: {{w1}}px;">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" ng-style="s1">
               <div class="flipper">
                 <div class="front">
                   <img class="img-proj" src="./img/twitterbootstrapmvc.gif" />
@@ -79,7 +79,7 @@
 
           <div class="col-lg-6" id="proj2-t">
             <h1 class="align-center"><a href="https://www.twitterbootstrapmvc.com/" target="_blank">TwitterBootstrapMVC.com</a></h1>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" style="height: {{h2}}px; max-width: {{w2}}px;">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" ng-style="s2">
               <div class="flipper">
                 <div class="front">
                   <img class="img-proj" src="./img/twitterbootstrapmvccom.gif" />
@@ -100,7 +100,7 @@
         <div class="row">
           <div class="col-lg-6" id="proj3-t">
             <h1 class="align-center"><a href="http://www.personalitymatch.net" target="_blank">PersonalityMatch.net</a></h1>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" style="height: {{h3}}px; max-width: {{w3}}px;">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');" ng-style="s3">
               <div class="flipper">
                 <div class="front">
                   <img class="img-proj" src="./img/personalitymatch.gif" />
@@ -134,13 +134,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+    <!--
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <!--
+    -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    -->
+    
     <script src="./js/jquery.scrollTo-1.4.3.1-min.js"></script>
   </body>
   </html>

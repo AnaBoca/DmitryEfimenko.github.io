@@ -1,6 +1,12 @@
 window.app = angular.module('app', []);
 
 window.app.controller('homeController', function($scope){
+	function isIE() {
+	  return window.ActiveXObject || "ActiveXObject" in window;
+	}
+
+	$('html').addClass(isIE() ? 'ie' : 'noie')
+
 	var img1 = $('.img-proj')[0];
 	var back1 = $('#b1');
 	var img2 = $('.img-proj')[1];
@@ -18,6 +24,11 @@ window.app.controller('homeController', function($scope){
 			$scope.w2 = img2.width+10;
 			$scope.h3 = Math.max(img3.height,back3.height())+10;
 			$scope.w3 = img3.width+10;
+			console.log($scope.h1);
+
+			$scope.s1 = { height: $scope.h1 + 'px', width: $scope.w1 + 'px' };
+			$scope.s2 = { height: $scope.h2 + 'px', width: $scope.w2 + 'px' };
+			$scope.s3 = { height: $scope.h3 + 'px', width: $scope.w3 + 'px' };
 		});
 	};
 	window.onresize = getHeight;

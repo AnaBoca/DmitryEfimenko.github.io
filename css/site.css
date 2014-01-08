@@ -57,7 +57,7 @@ body {
 
 
 /* simple */
-.flip-container {
+.noie .flip-container {
 	-webkit-perspective: 1000;
 	-moz-perspective: 1000;
 	perspective: 1000;
@@ -65,7 +65,7 @@ body {
 }
 
 	
-.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+.noie .flip-container:hover .flipper, .noie .flip-container.hover .flipper, .noie #flip-toggle.flip .flipper {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	transform: rotateY(180deg);
@@ -73,11 +73,7 @@ body {
 	-ms-filter: "FlipH";
 }
 
-.flip-container, .front, .back {
-	
-}
-
-.flipper {
+.noie .flipper {
 	-webkit-transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
 
@@ -90,7 +86,7 @@ body {
 	position: relative;
 }
 
-.front, .back {
+.noie .front, .noie .back {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -100,12 +96,12 @@ body {
 	left: 0;
 }
 
-.front {
+.noie .front {
 	z-index: 2;
 }
 
-.back {
-	padding: 20px; 10px;
+.noie .back {
+	padding: 20px 10px;
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	transform: rotateY(180deg);
@@ -119,4 +115,41 @@ body {
 .filler {
 	position: absolute;
 	z-index: 0;
+}
+
+.ie .flipper {
+	position: relative;
+}
+
+.ie .front, .ie .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ie .front {
+	z-index: 1;
+}
+
+.ie .back {
+	z-index: 0;
+	padding: 20px 10px;
+}
+
+.ie .flip-container .front {
+	opacity: 1;
+	-webkit-transition: opacity 150ms ease-out;
+    -moz-transition: opacity 150ms ease-out;
+    -o-transition: opacity 150ms ease-out;
+    -ms-transition: opacity 150ms ease-out;
+    transition: opacity 150ms ease-out;
+}
+
+.ie .flip-container:hover .front {
+	opacity: 0;
+	-webkit-transition: opacity 150ms ease-out;
+    -moz-transition: opacity 150ms ease-out;
+    -o-transition: opacity 150ms ease-out;
+    -ms-transition: opacity 150ms ease-out;
+    transition: opacity 150ms ease-out;
 }
