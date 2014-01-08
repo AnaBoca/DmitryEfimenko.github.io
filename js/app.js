@@ -53,5 +53,9 @@ window.app.controller('homeController', function($scope){
 		e.preventDefault();
 		$(document).scrollTo($('#proj4-t'), 500);
 	});
+
+	$(document).on('swipe', '.flip-container', function(){
+		$(this).trigger('hover');
+	});
 });
 
