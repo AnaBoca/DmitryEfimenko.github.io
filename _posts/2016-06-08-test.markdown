@@ -6,3 +6,21 @@ layout: post
 There is a saying "laziness is the mother of all bad habits", but for us, programmers I find another saying to be true more often: "Lazyness is the driver of  all progress".
 
 While working on couple projects DbDima and Knives.lib I found myself executing the same docker commands over and over again. Being a lazy programmer I decided to automate this, which led to the birth of a new library: docker-cmd-js.
+
+## Show me code!
+Example to deply an app to AWS
+```javascript
+var gulp = require('gulp');
+var dockerCmdJs = require('docker-cmd-js');
+var cmd = new dockerCmdJs.Cmd();
+
+gulp.task('deploy', (done) => {
+    cmd.debug().run('aws ecr get-login --region us-east-1', true)
+        .then((authCmd)=> cmd.run(authCmd))
+        .then(()=> cmd.run('docker build -t myapp .'))
+        .then(()=> cmd.run('docker tag myapp:latest someawsid.dkr.ecr.us-east-1.amazonaws.com/myapp:latest'))
+        .then(()=> cmd.run('docker push someawsid.dkr.ecr.us-east-1.amazonaws.com/myapp:latest'))
+        .catch((err) => { console.log(err); })
+        .finally(() => { done() });
+});
+```
