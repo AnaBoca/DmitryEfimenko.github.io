@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Runninng docker commands via gulp
 layout: post
 ---
