@@ -1,6 +1,8 @@
 ---
 published: false
-title: Test
+title: Runninng docker commands via gulp
 layout: post
 ---
-test
+There is a saying "laziness is the mother of all bad habits", but for us, programmers I find another saying to be true more often: "Lazyness is the driver of  all progress".
+
+While working on couple projects DbDima and Knives.lib I found myself executing the same docker commands over and over again. Being a lazy programmer I decided to automate this, which led to the birth of a new library: docker-cmd-js.
