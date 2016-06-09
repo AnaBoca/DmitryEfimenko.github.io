@@ -1,3 +1,11 @@
+.header-inner .Header .titlewrapper {
+    padding: 0;
+}
+
+.descriptionwrapper a {
+    color: white;
+}
+
 .body-fauxcolumn-outer .cap-top {
     height: 330px;
 }
@@ -19,6 +27,11 @@
 
 .body-fauxcolumns .cap-top > .cap-left:after {
     content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background: url("https://dmitryefimenko.github.io/blogger_assets/masthead-pattern.png") repeat center center;
     opacity: .5;
 }
