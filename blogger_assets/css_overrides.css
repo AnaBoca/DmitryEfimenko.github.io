@@ -1,0 +1,18 @@
+.body-fauxcolumns .cap-top > .cap-left {
+    text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
+    background: #ff4700;
+    background: -moz-linear-gradient(45deg,#ff4700 0%,#0273ee 100%);
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#ff4700),color-stop(100%,#0273ee));
+    background: -webkit-linear-gradient(45deg,#ff4700 0%,#0273ee 100%);
+    background: -o-linear-gradient(45deg,#ff4700 0%,#0273ee 100%);
+    background: -ms-linear-gradient(45deg,#ff4700 0%,#0273ee 100%);
+    background: linear-gradient(45deg,#ff4700 0%,#0273ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4700',endColorstr='#0273EE',GradientType=1);
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.body-fauxcolumns .cap-top > .cap-left:after {
+    background: url("https://dmitryefimenko.github.io/blogger_assets/masthead-pattern.png") repeat center center;
+}
