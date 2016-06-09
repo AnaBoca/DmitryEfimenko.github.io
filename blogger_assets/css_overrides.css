@@ -1,5 +1,32 @@
+header {
+    margin: 20px auto 0 0;
+}
+
+.header-inner {
+    margin-left: 200px;
+}
+
+#header-inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://avatars3.githubusercontent.com/u/2098175?v=3&s=460);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
 .header-inner .Header .titlewrapper {
     padding: 0;
+}
+
+.descriptionwrapper {
+    margin-bottom: 40px;
 }
 
 .descriptionwrapper a {
@@ -7,7 +34,7 @@
 }
 
 .body-fauxcolumn-outer .cap-top {
-    height: 330px;
+    height: 390px;
 }
 
 .body-fauxcolumns .cap-top > .cap-left {
